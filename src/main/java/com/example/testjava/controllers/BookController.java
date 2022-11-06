@@ -31,7 +31,7 @@ public class BookController {
 
     @PostMapping("")
     public ResponseEntity<HttpStatus> addBook(@RequestBody Book book){
-        bookService.save(book); // test comment
+        bookService.save(book);
         return ResponseEntity.ok(HttpStatus.OK);
     }
 
